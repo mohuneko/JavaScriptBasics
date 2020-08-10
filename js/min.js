@@ -225,9 +225,9 @@
 // console.log(x);
 // }
 
-{
-  const scores = [80, 90, 40, 70];
-  scores.splice(1, 1, 40, 50);
+// {
+//   const scores = [80, 90, 40, 70];
+//   scores.splice(1, 1, 40, 50);
   // scores.push(60, 50);
   // scores.shift();
   //90, 40, 70, 60, 50
@@ -244,7 +244,46 @@
   // console.log(`Score: ${scores[2]}`);
 
   // for (let i = 0; i < 3; i++) {
-  for (let i = 0; i < scores.length; i++) {
-    console.log(`Score ${i}: ${scores[i]}`);
-  }
+//   for (let i = 0; i < scores.length; i++) {
+//     console.log(`Score ${i}: ${scores[i]}`);
+//   }
+// }
+
+// {
+//   const otherScores = [10, 20];
+//   const scores = [80, 90, 40, 70, ...otherScores];
+//   // console.log(scores);
+
+//   function sum(a ,b) {
+//     console.log(a + b);
+//   }
+
+//   sum(...otherScores);
+// }
+
+{
+  const scores = [80, 90, 40, 70];
+
+  // scores.forEach((score) => {
+  scores.forEach((score, index) => {
+    console.log(`Score ${index}: ${score}`);
+  });
+
+  // const [a, b, c, d] = scores;
+  // console.log(a);
+  // console.log(b);
+  // console.log(c);
+  // console.log(d);
+
+  // const [a, b, ...others] = scores;
+  // console.log(a);
+  // console.log(b);
+  // console.log(others);
+
+  // let x = 30;
+  // let y = 70;
+  // [x, y] = [y, x];
+  // console.log(x);
+  // console.log(y);
+
 }
