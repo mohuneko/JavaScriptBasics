@@ -207,5 +207,44 @@
 // const double = function(a) {
 //   return a * 2;
 // }
-const double = a => a * 2;
-console.log(double(12));
+// const double = a => a * 2;
+// console.log(double(12));
+
+// const x = 2;
+
+// function f() {
+//   const x = 1;
+//   console.log(x);
+// }
+
+// f();
+// console.log(x);
+
+// {
+// const x = 100;
+// console.log(x);
+// }
+
+{
+  const scores = [80, 90, 40, 70];
+  scores.splice(1, 1, 40, 50);
+  // scores.push(60, 50);
+  // scores.shift();
+  //90, 40, 70, 60, 50
+
+  // console.log(scores[1]);
+
+  // scores[2] = 44;
+  // console.log(scores);
+
+  // console.log(scores.length);
+
+  // console.log(`Score: ${scores[0]}`);
+  // console.log(`Score: ${scores[1]}`);
+  // console.log(`Score: ${scores[2]}`);
+
+  // for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < scores.length; i++) {
+    console.log(`Score ${i}: ${scores[i]}`);
+  }
+}
