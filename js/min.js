@@ -261,29 +261,181 @@
 //   sum(...otherScores);
 // }
 
-{
-  const scores = [80, 90, 40, 70];
+// {
+//   const scores = [80, 90, 40, 70];
 
-  // scores.forEach((score) => {
-  scores.forEach((score, index) => {
-    console.log(`Score ${index}: ${score}`);
+//   // scores.forEach((score) => {
+//   scores.forEach((score, index) => {
+//     console.log(`Score ${index}: ${score}`);
+//   });
+
+//   // const [a, b, c, d] = scores;
+//   // console.log(a);
+//   // console.log(b);
+//   // console.log(c);
+//   // console.log(d);
+
+//   // const [a, b, ...others] = scores;
+//   // console.log(a);
+//   // console.log(b);
+//   // console.log(others);
+
+//   // let x = 30;
+//   // let y = 70;
+//   // [x, y] = [y, x];
+//   // console.log(x);
+//   // console.log(y);
+
+// }
+
+// {
+//   const prices = [180, 190, 200];
+
+//   // const updatedPrices = prices.map((price) => {
+//   //   return price + 20;
+//   // });
+//   const updatedPrices = prices.map(price => price + 20);
+//   console.log(updatedPrices);
+
+
+
+// {
+//   const numbers = [1, 4, 7, 8, 10];
+
+//   // const evenNumbers = numbers.filter(number => {
+//   //    if (number % 2 === 0) {
+//   //      return true;
+//   //    } else {
+//   //      return false;
+//   //    }
+//   // });
+//   const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+//   console.log(evenNumbers);
+// }
+
+// {
+//   // const point = [100, 180];
+//   // const point = {x: 100, y:180};
+//   const point = {
+//     x: 100,
+//     y:180
+//   };
+//   point.x = 120;
+//   // point['y'] = 120;
+
+//   // console.log(point.x);
+//   // console.log(point['y']);
+
+//   point.z = 90;
+//   delete point.y;
+//   console.log(point);
+// }
+
+// {
+//   const otherProps = {
+//     r: 4,
+//     color: 'red',
+//   };
+
+//   const point = {
+//     x: 100,
+//     y:180,
+//     ...otherProps,
+//   };
+
+//   // console.log(point);
+
+//   const {x, r, ...others} = point;
+//   console.log(x);
+//   console.log(r);
+//   console.log(others);
+// }
+
+// {
+//   const point = {
+//     x: 100,
+//     y: 100,
+//   };
+
+//   // const keys = Object.keys(point);
+//   // keys.forEach(key => {
+//   //   console.log(`Key: ${key} Value: ${point[key]}`);
+//   // });
+
+//   const points = [
+//     {x: 30, y: 20},
+//     {x: 10, y: 50},
+//     {x: 40, y: 40},
+//   ];
+//   console.log(points[1].y); 
+// }
+
+
+// {
+//   // let x = 1;
+//   // let y = x;
+//   // x = 5;
+//   // console.log(x); //5
+//   // console.log(y); //1
+
+//   // let x = [1, 2];
+//   // let y = x;
+//   // x[0] = 5;
+//   // console.log(x); //[5, 2]
+//   // console.log(y); //[5, 2]
+
+//   let x = [1, 2];
+//   let y = [...x];
+//   x[0] = 5;
+//   console.log(x); //[5, 2]
+//   console.log(y); //[1, 2]
+// }
+
+// {
+//   const str = 'hello';
+
+//   // console.log(str.length);
+
+//   // str.substring(開始位置, 終了位置);
+//   // console.log(str.substring(2, 4));
+
+//   console.log(str[1]);
+//   // str[1] = 'a';
+// }
+
+// {
+//   const d = [2019, 11, 14];
+
+//   // console.log(d.join('/'));
+//   // console.log(d.join(''));
+
+//   const t = '17:08:24';
+//   // console.log(t.split(':'));
+//   const [hour, minute, second] = t.split(':');
+//   console.log(hour);
+//   console.log(minute);
+//   console.log(second);
+// }
+
+{
+  const scores = [10, 3, 9];
+
+  let sum = 0;
+
+  scores.forEach(score => {
+    sum += score;
   });
 
-  // const [a, b, c, d] = scores;
-  // console.log(a);
-  // console.log(b);
-  // console.log(c);
-  // console.log(d);
+  const avg = sum / scores.length;
 
-  // const [a, b, ...others] = scores;
-  // console.log(a);
-  // console.log(b);
-  // console.log(others);
+  // console.log(sum);
+  // console.log(avg);
 
-  // let x = 30;
-  // let y = 70;
-  // [x, y] = [y, x];
-  // console.log(x);
-  // console.log(y);
+  console.log(Math.floor(avg)); //7
+  console.log(Math.ceil(avg)); //8
+  console.log(Math.round(avg)); //7
+  console.log(avg.toFixed(3)); //7.333
 
+  console.log(Math.random());
 }
