@@ -418,24 +418,85 @@
 //   console.log(second);
 // }
 
-{
-  const scores = [10, 3, 9];
+// {
+//   const scores = [10, 3, 9];
 
-  let sum = 0;
+//   let sum = 0;
 
-  scores.forEach(score => {
-    sum += score;
-  });
+//   scores.forEach(score => {
+//     sum += score;
+//   });
 
-  const avg = sum / scores.length;
+//   const avg = sum / scores.length;
 
-  // console.log(sum);
-  // console.log(avg);
+//   // console.log(sum);
+//   // console.log(avg);
 
-  console.log(Math.floor(avg)); //7
-  console.log(Math.ceil(avg)); //8
-  console.log(Math.round(avg)); //7
-  console.log(avg.toFixed(3)); //7.333
+//   console.log(Math.floor(avg)); //7
+//   console.log(Math.ceil(avg)); //8
+//   console.log(Math.round(avg)); //7
+//   console.log(avg.toFixed(3)); //7.333
 
-  console.log(Math.random());
-}
+//   console.log(Math.random());
+// }
+
+// {
+//   // console.log(Math.random());
+//   // 0, 1, 2
+//   //Math.foor(Math.random() * 3)
+//   //0, ...,2
+//   //Math.foor(Math.random() * (n + 1))
+//   //min, ..., max
+//   //Math.foor(Math.random() * (max + 1 - min)) + nin
+//   console.log(Math.floor(Math.random() * 6 + 1));
+// }
+
+// {
+//   const d = new Date(2019, 10);//2019/11/01 00:00:00
+//   d.setHours(10, 20, 30); //2019/11/01 10:20:30
+//   d.setDate(31); //2019/12/01 10:20:30
+//   d.setDate(d.getDate() * 3); //2019/12/04 10:20:30
+//   console.log(d);
+//   // console.log(`${d.getMonth() + 1} 月 ${d.getDate()} 日`);
+// }
+
+// {
+//   // alert('hello');
+//   const answer = confirm('削除しますか');
+//   if (answer) {
+//     console.log('削除しました');
+//   } else {
+//     console.log('キャンセルしました');
+//   }
+// }
+
+// {
+//   let i = 0; //カウンター用の変数を用意
+
+//   function showTime() {
+//     console.log(new Date());
+//     i++;
+//     if (i > 2) {
+//       clearInterval(intervalId);
+//     }
+//   }
+
+//   const intervalId = setInterval(showTime, 1000);
+
+// }
+
+// {
+//   let i = 0;
+
+//   function showTime() {
+//     console.log(new Date());
+//     const timeoutId = setTimeout(showTime, 1000);
+//     i++;
+//     if (i > 2) {
+//       clearTimeout(timeoutId);
+//     }
+//   }
+
+//   showTime();
+
+// }
