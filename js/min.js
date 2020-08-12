@@ -500,3 +500,150 @@
 //   showTime();
 
 // }
+
+// {
+//   const name = 5;
+//   // const name = 'taguchi';
+
+//   try {
+//     console.log(name.toUpperCase());
+//   } catch (e) {
+//     console.log(e);
+//   }
+
+//   // console.log(name.toUpperCase());
+//   console.log('finish!');
+
+// }
+
+// {
+//   class Post { //親クラス
+//     constructor(text) {
+//       this.text = text;
+//       this.likeCount = 0;
+//     }
+
+//     show() {
+//       console.log(`${this.text} - ${this.likeCount} likes`);
+//     }
+
+//     like() {
+//       this.likeCount++;
+//       this.show();
+//     }
+
+//   }
+
+//   class SponsoredPost extends Post { //子クラス
+//     constructor(text, sponsor) {
+//       super(text);
+//       this.sponsor = sponsor;
+//     }
+
+//     show() {
+//       super.show();
+//       console.log(`...sponsored by ${this.sponsor}`);
+//     }
+//   }
+
+//   const posts = [
+//     new Post('JavaScriptの勉強中…'),
+//     new Post('プログラミング楽しい！'),
+//     new SponsoredPost('3分動画でマスターしよう', 'dotinstall'),
+//   ];
+
+//   posts[2].show();
+//   posts[2].like();
+// }
+
+
+
+    // document.querySelector('p').textContent = 'Changed!';
+    // document.querySelectorAll('p')[1].textContent = 'Changed!';
+    // document.querySelectorAll('p').forEach((p, index) => {
+      //   p.textContent = `${index}番目のpです！`;
+      // });
+
+
+    // document.querySelector('button').addEventListener('click', () => {
+
+      // const item0 = document.querySelectorAll('li')[0];
+      // const copy = item0.cloneNode(true);
+
+      // const ul = document.querySelector('ul');
+      // const item2 = document.querySelectorAll('li')[2];
+      // ul.insertBefore(copy, item2);
+
+      // const item2 = document.createElement('li');
+      // item2.textContent = 'item2';
+
+      // // const ulNode = document.querySelector('ul');
+      // const ul = document.querySelector('ul');
+      // ul.appendChild(item2);
+      // const targetNode = document.getElementById('target');
+
+      // targetNode.className = 'my-color my-border';
+      // targetNode.classList.add('my-color');
+      // if (targetNode.classList.contains('my-color') === true ) {
+      //   targetNode.classList.remove('my-color');
+      // } else {
+      //   targetNode.classList.add('my-color');
+      // }
+      // targetNode.classList.toggle('my-color');
+      // targetNode.textContent = 'Dotinstall';
+      // targetNode.textContent = targetNode.dataset.translation;
+
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const item1 = document.querySelectorAll('li')[1];
+
+//     // item1.remove();
+//     //親Node.removeChild(削除するNode)
+//     document.querySelector('ul').removeChild(item1);
+//   });
+// }
+
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const li = document.createElement('li');
+//     const text = document.querySelector('input');
+//     li.textContent = text.value;
+//     document.querySelector('ul').appendChild(li);
+
+//     text.value = '';
+//     text.focus();
+//   });
+// }
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const li = document.createElement('li');
+//     const color = document.querySelector('select');
+//     li.textContent = `${color.value} - ${color.selectedIndex}`;
+//     document.querySelector('ul').appendChild(li);
+
+//   });
+// }
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const colors = document.querySelectorAll('input');
+//     let selectedColor;
+
+
+//     colors.forEach(color => {
+//       if (color.checked === true) {
+//         selectedColor = color.value;
+//       }
+//     });
+
+//     const li = document.createElement('li');
+//     li.textContent = selectedColor;
+//     document.querySelector('ul').appendChild(li);
+//   });
+// }
+
+
+{
+  document.querySelector('button').addEventListener('click', () => {
+
+  });
+}
